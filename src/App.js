@@ -1,7 +1,7 @@
 import './App.css';
 import icon from './images/icon-dice.svg';
 import dividerDesk from './images/pattern-divider-desktop.svg';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 function App() {
@@ -22,6 +22,10 @@ function App() {
     });
 
   }
+
+  useEffect(() => {
+    click();
+  }, []);
 
   return (
     <div className="App">
